@@ -1,6 +1,7 @@
-public class Perro extends Animal {
+package Animales;
 
-    final static Integer numPatas = 4;
+public class Humano extends Animal {
+    final static Integer numPatas = 2;
     final static Boolean mamifero = true;
     @Override
     Integer getNumPatas(){
@@ -10,5 +11,10 @@ public class Perro extends Animal {
     @Override
     Boolean esMamifero() {
         return mamifero;
+    }
+
+    @Override
+    void hablar() {
+        System.out.println("Hola");
     }
 }

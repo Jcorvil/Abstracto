@@ -1,3 +1,5 @@
+package Animales;
+
 public class Gato extends Animal {
     final static Integer numPatas = 4;
     final static Boolean mamifero = true;
@@ -9,5 +11,10 @@ public class Gato extends Animal {
     @Override
     Boolean esMamifero() {
         return mamifero;
+    }
+
+    @Override
+    void hablar() {
+        System.out.println("Miau");
     }
 }
